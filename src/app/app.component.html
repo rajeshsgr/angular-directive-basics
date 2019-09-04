@@ -3,18 +3,53 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<hr>
+
+<div class="container">
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td> Basic Directive with parameter</td>
+        <td><p address></p></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Basic Directive with parameter and ElementRef</td>
+        <td><p coloraddress="lightblue" address></p>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Basic Directive with parameter and ElementRef</td>
+        <td><p coloraddress="yellow" address></p></td>
+      </tr>
+      <tr>
+          <th scope="row">4</th>
+          <td>Basic Directive with  Renderer2</td>
+          <td><p appShadowText address></p></td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Basic Directive with parameter and Renderer2</td>
+            <td><p 
+              [appShadowColor]="'red'"
+              [appShadowX]="'12px'"
+              [appShadowY]="'6px'"
+              [shadowSize]="'10px'" address></p></td>
+          </tr>
+
+    </tbody>
+  </table>
+</div>
